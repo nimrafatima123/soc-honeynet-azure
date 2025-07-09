@@ -29,5 +29,58 @@ This project builds a secure cybersecurity lab in Microsoft Azure that simulates
 
 - **Geo-IP Watchlists:** Imported to correlate attacker IPs with their geographical origins
 
+## ***Attack Maps Before Hardening / Security Controls***
+
+![Screenshot 2025-07-09 104423](https://github.com/user-attachments/assets/ece62d03-7ebd-44e1-add9-fedacf7734db)
+
+![Screenshot 2025-07-09 104634](https://github.com/user-attachments/assets/28965927-0d3d-49f1-9ff5-4ef00586faf4)
+
+![Screenshot 2025-07-09 105008](https://github.com/user-attachments/assets/015a56df-6664-4242-bffa-a6ecb73c8474)
+
+
+## ***Attack Maps After Hardening / Security Controls***
+
+![Screenshot 2025-07-09 104743](https://github.com/user-attachments/assets/b528f256-61e3-46eb-9afb-4bbf693e8fed)
+
+Since no malicious activity occurred during the 24 hours after hardening, all map queries produced no results.
+
+## ***Metrics Before Hardening / Security Controls :***
+
+The following table shows the metrics we measured in our insecure environment for 24 hours:
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent            | 3423
+| Syslog                   | 1659
+| SecurityAlert            | 6
+| SecurityIncident         | 1
+| AzureNetworkAnalytics_CL | 374
+
+## ***Metrics After Hardening / Security Controls :***
+
+The following table shows the metrics we measured in our environment for another 24 hours, but after applying security controls:
+
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent            | 1531
+| Syslog                   | 0
+| SecurityAlert            | 0
+| SecurityIncident         | 0
+| AzureNetworkAnalytics_CL | 0
+
+## ***RESULTS :***
+
+| Metric                   | Percentage Change After Applying Security Controls
+| ------------------------ | -----
+| SecurityEvent            | 55.27%
+| Syslog                   | 100%
+| SecurityAlert            | 100%
+| SecurityIncident         | 100%
+| AzureNetworkAnalytics_CL | 100%
+
+## ***SUMMARY :***
+
+In this project, I designed and built a live Security Operations Center (SOC) and honeynet using Microsoft Azure. I deployed intentionally vulnerable Windows and Linux virtual machines to attract real attack attempts and generate security data. Using Microsoft Sentinel, Defender for Cloud, and Kusto Query Language (KQL), I collected logs, created custom detection rules, visualized threats, and practiced incident response just like a real SOC team would. This project shows how cloud security tools can be combined to safely simulate attacks, detect threats, and build practical cybersecurity skills in a controlled lab environment.
 
 
