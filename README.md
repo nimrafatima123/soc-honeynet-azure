@@ -3,7 +3,7 @@
 
 This project builds a secure cybersecurity lab in Microsoft Azure that simulates real-world attacks using intentionally vulnerable Windows and Linux virtual machines. The environment integrates a honeynet to attract threats, while Microsoft Sentinel and Defender for Cloud monitor, detect, and respond to malicious activity. The setup demonstrates live log collection, threat detection with KQL queries, incident response workflows, and cloud security best practices — all in a safe, isolated lab.
 
-## ***CLOUD HONEYNET + SOC ARCHITECTURE :***
+## ***CLOUD HONEYNET + SOC WORKFLOW :***
 
 
 ![image](https://github.com/user-attachments/assets/4f2d77b6-a2bb-4568-b8d9-7d24022d8ea4)
